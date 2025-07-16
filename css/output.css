@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-950: oklch(25.8% 0.092 26.042);
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-500: oklch(76.9% 0.188 70.08);
@@ -467,6 +468,12 @@
   .w-\[32rem\] {
     width: 32rem;
   }
+  .w-\[44rem\] {
+    width: 44rem;
+  }
+  .w-\[64rem\] {
+    width: 64rem;
+  }
   .w-\[521px\] {
     width: 521px;
   }
@@ -484,6 +491,18 @@
   }
   .w-px {
     width: 1px;
+  }
+  .max-w-\[44rem\] {
+    max-width: 44rem;
+  }
+  .max-w-\[46rem\] {
+    max-width: 46rem;
+  }
+  .max-w-\[50rem\] {
+    max-width: 50rem;
+  }
+  .max-w-\[1200px\] {
+    max-width: 1200px;
   }
   .max-w-lg {
     max-width: var(--container-lg);
@@ -523,6 +542,9 @@
   }
   .items-start {
     align-items: flex-start;
+  }
+  .items-stretch {
+    align-items: stretch;
   }
   .justify-between {
     justify-content: space-between;
@@ -565,6 +587,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
@@ -630,6 +655,9 @@
   }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -826,6 +854,21 @@
       display: none;
     }
   }
+  .max-\[1800px\]\:w-\[32rem\] {
+    @media (width < 1800px) {
+      width: 32rem;
+    }
+  }
+  .max-\[1800px\]\:w-\[36rem\] {
+    @media (width < 1800px) {
+      width: 36rem;
+    }
+  }
+  .max-\[1800px\]\:w-\[38rem\] {
+    @media (width < 1800px) {
+      width: 38rem;
+    }
+  }
   .max-\[1542px\]\:hidden {
     @media (width < 1542px) {
       display: none;
@@ -901,9 +944,24 @@
       display: flex;
     }
   }
+  .xl\:grid-cols-3 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
   .xl\:flex-wrap {
     @media (width >= 80rem) {
       flex-wrap: wrap;
+    }
+  }
+  .xl\:items-stretch {
+    @media (width >= 80rem) {
+      align-items: stretch;
+    }
+  }
+  .xl\:justify-between {
+    @media (width >= 80rem) {
+      justify-content: space-between;
     }
   }
 }
