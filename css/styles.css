@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme inline {
+  --default-font-family: 'Inter', sans-serif;
+}
+
+button {
+  @apply cursor-pointer text-sm;
+}
+
 .bg-gradient-image {
 border-radius: 20px;
     background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 38.46%, #121212 30.48%), url('../assets/images/olympiads/austronaut.png') no-repeat;
@@ -11,5 +19,9 @@ border-radius: 20px;
 .image-fade {
   mask-image: linear-gradient(to left, transparent, black 30%);
   -webkit-mask-image: linear-gradient(to right, transparent, black 30%);
+}
+
+.hover-button {
+  @apply hover:bg-gray-100/10;
 }
 

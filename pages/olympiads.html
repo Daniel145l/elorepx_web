@@ -5,16 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/output.css" />
 
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Olimpiadas</title>
   </head>
 
-  <body class="h-screen font-inter w-full">
-    <main class="w-full max-w-[1280px] mx-auto px-4 lg:px-8">
+  <body class="min-h-screen font-inter w-full flex flex-col">
+    <header
+      class="bg-black text-white md:bg-transparent flex items-center justify-center px-4 md:px-10 sticky z-10 right-0 left-0 top-0 md:relative mb-10"
+    >
+      <nav
+        class="w-full h-24 max-w-[1280px] flex justify-between items-center md:hidden"
+        data-navigation="mobile"
+      >
+        <strong class="text-2xl font-bold flex items-center gap-2">
+          <i class="ph ph-planet text-[32px] stroke-3"></i>
+          Elorepx
+        </strong>
+
+        <button
+          class="bg-black rounded-md size-12 hover-button transition-colors"
+          data-button="navigation-trigger"
+        >
+          <i class="ph ph-list text-[32px]"></i>
+        </button>
+      </nav>
+
+      <nav
+        data-navigation="desktop"
+        class="w-full max-w-[1280px] flex justify-center items-center mt-6 max-md:hidden"
+      >
+        <div
+          class="flex-1 text-black justify-end pr-12 flex gap-12 items-center shadow-[0px_0px_8px_6px_rgba(0,0,0,0.15)] translate-x-1 rounded-l-2xl"
+        >
+          <a href="#" class="text-base hover:underline uppercase">Home</a>
+          <a href="#" class="text-base hover:underline uppercase">Olimpiadas</a>
+        </div>
+
+        <div
+          class="bg-black rounded-full size-26 flex items-center justify-center px-3"
+        >
+          <strong class="text-[16px] font-bold flex items-center gap-1">
+            <i class="ph ph-planet text-[20px] stroke-3"></i>
+            Elorepx
+          </strong>
+        </div>
+
+        <div
+          class="flex-1 text-black pl-12 flex gap-12 items-center shadow-[0px_0px_8px_6px_rgba(0,0,0,0.15)] -translate-x-1 rounded-r-2xl"
+        >
+          <a href="#" class="text-base hover:underline uppercase">Sobre</a>
+          <a href="#" class="text-base hover:underline uppercase">Canais</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-full max-w-[1280px] mx-auto px-4 lg:px-10 flex-1">
       <div
         class="text-white min-h-80 w-full rounded-2xl bg-black flex max-md:h-auto"
       >
         <div class="content p-10 flex-1 flex flex-col">
-          <div class="flex-1">
+          <div class="flex-1 mb-6">
             <h1 class="font-bold text-4xl">Desvende o Universo das Questões</h1>
             <p class="mt-1 text-[#a5a5a5] text-[14pt]">
               Explore as questões das principais olimpíadas científicas do
@@ -51,166 +109,157 @@
           class="grid gap-10 w-full justify-between grid-cols-1 sm:grid-cols-2"
         >
           <div
-            class="relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#000916] to-black text-white p-6 pb-16 space-y-6 shadow-xl"
+            class="relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#000916] to-black text-white p-6 md:p-10 flex flex-col justify-between gap-10 shadow-xl"
           >
-            <div
-              class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
-            >
-              <img src="../assets/images/olympiads/telescope.svg" />
+            <div class="flex flex-col gap-4">
+              <div
+                class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
+              >
+                <i data-lucide="telescope"></i>
+              </div>
+              <h2 class="text-2xl font-semibold">
+                Olimpíada Brasileira de Astronomia - OBA
+              </h2>
+              <p class="text-gray-400">
+                A OBA é uma olimpíada científica anual que estimula o interesse
+                dos estudantes pelas áreas da Astronomia e da Astronáutica,
+                promovendo conhecimento e curiosidade científica em todas as
+                escolas do Brasil.
+              </p>
             </div>
-            <h2 class="text-2xl font-semibold">
-              Olimpíada Brasileira de Astronomia - OBA
-            </h2>
-            <p class="text-gray-400">
-              A OBA é uma olimpíada científica anual que estimula o interesse
-              dos estudantes pelas áreas da Astronomia e da Astronáutica,
-              promovendo conhecimento e curiosidade científica em todas as
-              escolas do Brasil.
-            </p>
-            <div class="absolute bottom-6 left-6">
+            <div class="flex">
               <a
                 href="#"
                 class="bg-white text-black px-4 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-gray-200 transition"
               >
                 Mais informações
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
+                <i data-lucide="arrow-up-right"></i>
               </a>
             </div>
           </div>
 
           <div
-            class="olympiadCard relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#160422] to-black text-white p-6 pb-16 space-y-6 shadow-xl"
+            class="relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#160422] to-black text-white p-6 md:p-10 flex flex-col justify-between gap-10 shadow-xl"
           >
-            <div
-              class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
-            >
-              <img src="../assets/images/olympiads/telescope.svg" />
+            <div class="flex flex-col gap-4">
+              <div
+                class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
+              >
+                <i data-lucide="rocket"></i>
+              </div>
+              <h2 class="text-2xl font-semibold">
+                Mostra Brasileira de Foguetes <br />
+                - MOBFOG
+              </h2>
+              <p class="text-gray-400">
+                A MOBFOG é uma mostra experimental e prática que desafia
+                estudantes a projetar, construir e lançar foguetes, promovendo o
+                aprendizado das leis da Física de forma divertida e
+                participativa.
+              </p>
             </div>
-            <h2 class="text-2xl font-semibold">
-              Mostra Brasileira de Foguetes <br />
-              - MOBFOG
-            </h2>
-            <p class="text-gray-400">
-              A MOBFOG é uma mostra experimental e prática que desafia
-              estudantes a projetar, construir e lançar foguetes, promovendo o
-              aprendizado das leis da Física de forma divertida e participativa.
-            </p>
-            <div class="absolute bottom-6 left-6">
+            <div class="flex">
               <a
                 href="#"
                 class="bg-white text-black px-4 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-gray-200 transition"
               >
                 Mais informações
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
+                <i data-lucide="arrow-up-right"></i>
               </a>
             </div>
           </div>
 
           <div
-            class="olympiadCard relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#00160E] to-black text-white p-6 pb-16 space-y-6 shadow-xl"
+            class="relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#00160E] to-black text-white p-6 md:p-10 flex flex-col justify-between gap-10 shadow-xl"
           >
-            <div
-              class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
-            >
-              <img src="../assets/images/olympiads/telescope.svg" />
+            <div class="flex flex-col gap-4">
+              <div
+                class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
+              >
+                <i data-lucide="moon-star"></i>
+              </div>
+              <h2 class="text-2xl font-semibold">
+                Olimpíada Internacional de Astronomia e Astrofísica - IOAA
+              </h2>
+              <p class="text-gray-400">
+                A Seletiva IOAA é organizada para escolher os melhores
+                estudantes brasileiros que representarão o país na Olimpíada
+                Internacional de Astronomia e Astrofísica. Participam os
+                medalhistas da OBA em provas mais avançadas e seletivas.
+              </p>
             </div>
-            <h2 class="text-2xl font-semibold">
-              Olimpíada Internacional de Astronomia e Astrofísica - IOAA
-            </h2>
-            <p class="text-gray-400">
-              A Seletiva IOAA é organizada para escolher os melhores estudantes
-              brasileiros que representarão o país na Olimpíada Internacional de
-              Astronomia e Astrofísica. Participam os medalhistas da OBA em
-              provas mais avançadas e seletivas.
-            </p>
-            <div class="absolute bottom-6 left-6">
+            <div class="flex">
               <a
                 href="#"
                 class="bg-white text-black px-4 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-gray-200 transition"
               >
                 Mais informações
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
+                <i data-lucide="arrow-up-right"></i>
               </a>
             </div>
           </div>
 
           <div
-            class="olympiadCard relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#221B04] to-black text-white p-6 pb-16 space-y-6 shadow-xl"
+            class="relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#221B04] to-black text-white p-6 md:p-10 flex flex-col justify-between gap-10 shadow-xl"
           >
-            <div
-              class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
-            >
-              <img src="../assets/images/olympiads/telescope.svg" />
+            <div class="flex flex-col gap-4">
+              <div
+                class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
+              >
+                <i class="ph ph-cactus text-[28px]"></i>
+              </div>
+              <h2 class="text-2xl font-semibold">
+                Olimpíada Cearense de Astronomia - OCA
+              </h2>
+              <p class="text-gray-400">
+                A OCA é uma iniciativa regional do estado do Ceará que busca
+                incentivar o estudo da Astronomia entre estudantes do Ensino
+                Fundamental e Médio, com provas escritas e eventos de observação
+                do céu.
+              </p>
             </div>
-            <h2 class="text-2xl font-semibold">
-              Olimpíada Cearense de Astronomia - OCA
-            </h2>
-            <p class="text-gray-400">
-              A OCA é uma iniciativa regional do estado do Ceará que busca
-              incentivar o estudo da Astronomia entre estudantes do Ensino
-              Fundamental e Médio, com provas escritas e eventos de observação
-              do céu.
-            </p>
-            <div class="absolute bottom-6 left-6">
+            <div class="flex">
               <a
                 href="#"
                 class="bg-white text-black px-4 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-gray-200 transition"
               >
                 Mais informações
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
+                <i data-lucide="arrow-up-right"></i>
               </a>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer
+      class="bg-black text-white px-4 py-8 flex items-center justify-center md:px-10 mt-10"
+    >
+      <div
+        class="flex flex-col items-center justify-between text-center gap-8 md:flex-row w-full max-w-[1280px]"
+      >
+        <strong class="text-xl font-bold flex items-center gap-2">
+          <i class="ph ph-planet text-[32px] stroke-3"></i>
+          Elorepx
+        </strong>
+
+        <p class="text-[#a5a5a5] text-base">
+          © 2025 Elorepx — Uma plataforma dedicada à exploração do conhecimento
+          científico.
+        </p>
+
+        <button
+          class="flex border py-2.5 px-3 gap-2 rounded-lg items-center justify-center hover-button transition-colors"
+        >
+          <span>Voltar ao topo</span>
+          <i data-lucide="chevron-up"></i>
+        </button>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
