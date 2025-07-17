@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
 
-    <title>Olimpiadas</title>
+    <title>Elorepx - Olimpiadas</title>
   </head>
 
   <body class="min-h-screen font-inter w-full flex flex-col">
@@ -67,41 +67,44 @@
       </nav>
     </header>
 
-    <main class="w-full max-w-[1280px] mx-auto px-4 lg:px-10 flex-1">
-      <div
-        class="text-white min-h-80 w-full rounded-2xl bg-black flex max-md:h-auto"
-      >
-        <div class="content p-10 flex-1 flex flex-col">
-          <div class="flex-1 mb-6">
-            <h1 class="font-bold text-4xl">Desvende o Universo das Questões</h1>
-            <p class="mt-1 text-[#a5a5a5] text-[14pt]">
-              Explore as questões das principais olimpíadas científicas do
-              Brasil.
-            </p>
-            <p class="mt-4 text-[#a5a5a5] text-[14pt]">
-              Escolha abaixo qual deseja explorar:
-            </p>
-          </div>
-          <div class="flex gap-5 max-md:flex max-md:flex-col">
+    <main class="w-full max-w-[1280px] mx-auto px-4 md:px-10 flex-1">
+      <section class="flex relative bg-black rounded-[20px]">
+        <!-- Bloco de texto -->
+        <div
+          class="flex-1 text-white bg-black p-10 h-full md:min-h-[386px] rounded-l-[20px] max-md:rounded-[20px] relative"
+        >
+          <h1 class="text-3xl md:text-4xl font-bold mb-3 md:max-w-[420px]">
+            Desvende o Universo das Questões
+          </h1>
+          <p class="text-[#A5A5A5] mb-3 md:max-w-[460px]">
+            Explore as questões das principais olimpíadas científicas do Brasil.
+          </p>
+          <p class="text-[#A5A5A5] mb-10 md:max-w-[460px]">
+            Escolha abaixo qual deseja explorar:
+          </p>
+          <div
+            class="flex gap-5 max-md:flex md:absolute md:bottom-10 flex-wrap"
+          >
             <div
-              class="bg-white rounded-[8px] text-black px-3 py-2.5 w-80 flex gap-1.5 items-center font-medium hover:bg-gray-200 transition"
+              class="bg-white rounded-[8px] text-black px-3 py-2.5 w-80 flex flex-1 gap-1.5 items-center font-medium hover:bg-gray-200 transition"
             >
               <img src="../assets/images/olympiads/rocket.svg" />
-              <a href="#">Explore e conheça as olimíadas</a>
+              <a href="#">Conheça as olimíadas</a>
             </div>
             <div
-              class="linkContainner bg-white rounded-[8px] text-black px-3 py-2.5 w-80 flex gap-1.5 items-center font-medium hover:bg-gray-200 transition"
+              class="linkContainner bg-white rounded-[8px] text-black flex-1 px-3 py-2.5 w-80 flex gap-1.5 items-center font-medium hover:bg-gray-200 transition"
             >
               <img src="../assets/images/olympiads/braing.svg" />
               <a href="#">Teste seu conhecimento</a>
             </div>
           </div>
         </div>
-        <img
-          class="image-fade flex-1/3 w-[120px] max-xl:hidden"
-          src="../assets/images/olympiads/austronaut.png"
-        />
-      </div>
+
+        <!-- Imagem com plano de fundo -->
+        <div
+          class="flex-1 mask-l-from-50% bg-black max-md:hidden grayscale mask-l-to-90% rounded-r-[20px] bg-center bg-cover bg-[url('../assets/images/olympiads/austronaut.png')]"
+        ></div>
+      </section>
 
       <section class="mt-9 w-full">
         <h1 class="font-bold text-3xl my-8">Olimpiadas</h1>
