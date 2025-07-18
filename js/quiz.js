@@ -1,30 +1,15 @@
-const questions = [
-  {
-    title: 'Questão 01',
-    text: 'Qual planeta é conhecido como o planeta vermelho?',
-    answers: [
-      { label: 'A', text: 'Terra', correct: false },
-      { label: 'B', text: 'Vênus', correct: false },
-      { label: 'C', text: 'Marte', correct: true },
-      { label: 'D', text: 'Júpiter', correct: false },
-    ],
-  },
-  {
-    title: 'Questão 02',
-    text: 'É a estrela mais próxima da Terra?',
-    answers: [
-      { label: 'A', text: 'Proxima Centauri', correct: false },
-      { label: 'B', text: 'Sol', correct: true },
-      { label: 'C', text: 'Sirius', correct: false },
-      { label: 'D', text: 'Alpha Centauri', correct: false },
-    ],
-  },
-];
+import { questions } from './questions.js';
 
 let currentIndex = 0;
-let answered = Array(questions.length).fill(null); // Agora guarda objetos
 let correctCount = 0;
 let answeredCount = 0;
+let answered = [];
+
+try {
+  answered = JSON.parse(localStorage.getItem('answered')) || Array(questions.length).fill(null);
+} catch {
+  answered = Array(questions.length).fill(null);
+}
 
 const questionTitle = document.querySelector('[data-question-title]');
 const questionText = document.querySelector('[data-question-text]');
@@ -33,6 +18,9 @@ const navList = document.querySelector('[data-side-list]');
 const nextButton = document.querySelector('[data-next-button]');
 const correctCounter = document.querySelector('[data-correct-answers-counter]');
 const answeredCounter = document.querySelector('[data-questions-answered-counter]');
+const endQuizSection = document.querySelector('[data-end-quiz-section]');
+const quizSection = document.querySelector('[data-quiz-section]');
+const resetButton = document.querySelector('[data-reset-button]');
 
 function renderQuestion(index) {
   const question = questions[index];
@@ -157,6 +145,8 @@ function handleAnswerClick(answerIndex) {
     correct: isCorrect,
   };
 
+  localStorage.setItem('answered', JSON.stringify(answered));
+
   if (isCorrect) correctCount++;
   answeredCount++;
   updateCounters();
@@ -177,11 +167,41 @@ navList.addEventListener('click', e => {
 });
 
 nextButton.addEventListener('click', () => {
+  if (nextButton.getAttribute('data-action') == 'reset') {
+    quizSection.classList.add('hidden');
+    endQuizSection.classList.remove('hidden');
+
+    return;
+  }
+
   if (currentIndex < questions.length - 1) {
     currentIndex++;
     renderQuestion(currentIndex);
   }
+
+  if (currentIndex === questions.length - 1) {
+    nextButton.setAttribute('data-action', 'reset');
+    nextButton.innerHTML = 'Finalizar o quiz';
+  }
 });
+
+resetButton.addEventListener('click', () => {
+  currentIndex = 0;
+  correctCount = 0;
+  answeredCount = 0;
+  answered = Array(questions.length).fill(null);
+
+  nextButton.setAttribute('data-action', 'next');
+  nextButton.innerHTML = '<span>Proxima</span> <i data-lucide="chevron-right"></i>';
+  lucide.createIcons();
+
+  quizSection.classList.remove('hidden');
+  endQuizSection.classList.add('hidden');
+  localStorage.setItem('answered', answered);
+
+  renderQuestion(currentIndex);
+  renderNav();
+})
 
 renderNav();
 renderQuestion(currentIndex);

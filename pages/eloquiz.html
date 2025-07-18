@@ -84,111 +84,129 @@
     >
       <h3 class="text-2xl font-semibold mb-4">EloQuiz</h3>
 
-      <div class="flex flex-1 gap-6">
+      <div class="flex flex-1 gap-6 flex-col lg:flex-row">
         <!-- Container da questão -->
-        <section class="border rounded-2xl flex-2/3 flex flex-col">
-          <header
-            class="bg-black text-white rounded-t-xl p-5 min-h-[92px] flex items-center"
-          >
-            <h5
-              class="text-lg font-semibold tracking-[-1px]"
-              data-question-title
+        <section class="border rounded-2xl flex-2/3">
+          <div class="flex flex-col h-full" data-quiz-section>
+            <header
+              class="bg-black text-white rounded-t-xl p-5 min-h-[92px] flex items-center"
             >
-              Questão 01
-            </h5>
-          </header>
+              <h5
+                class="text-lg font-semibold tracking-[-1px]"
+                data-question-title
+              >
+                Questão 01
+              </h5>
+            </header>
 
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <div>
-              <!-- Pergunta -->
-              <p class="line-clamp-3" data-question-text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                nobis ducimus reprehenderit molestias voluptas dolor nostrum
-                laudantium recusandae. Asperiores facilis quo expedita velit sit
-                earum ea veniam assumenda hic non!
-              </p>
+            <div class="p-4 flex flex-col flex-1 justify-between gap-10">
+              <div>
+                <!-- Pergunta -->
+                <p class="line-clamp-3" data-question-text></p>
 
-              <div class="h-[1px] w-full my-5 bg-black"></div>
+                <div class="h-[1px] w-full my-5 bg-black"></div>
 
-              <!-- Lista de -->
-              <ul class="space-y-3" data-answers-list>
-                <li
-                  class="bg-gray-100 p-2.5 border border-transparent wrong-answer rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
-                  role="button"
-                  tabindex="0"
-                >
-                  <span
-                    class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
-                    >A</span
+                <!-- Lista de -->
+                <ul class="space-y-3" data-answers-list>
+                  <!-- Exemplos -->
+                  <!-- <li
+                    class="bg-gray-100 p-2.5 border border-transparent wrong-answer rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
+                    role="button"
+                    tabindex="0"
                   >
+                    <span
+                      class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
+                      >A</span
+                    >
 
-                  <p class="line-clamp-2 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
-                    dolores, aliquam doloribus soluta nisi consectetur, nulla
-                    sequi tempore impedit autem! Voluptas!
-                  </p>
-                </li>
-                <li
-                  class="bg-gray-100 p-2.5 border border-transparent correct-answer rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
-                  role="button"
-                  tabindex="0"
-                >
-                  <span
-                    class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
-                    >B</span
+                    <p class="line-clamp-2 text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
+                      dolores, aliquam doloribus soluta nisi consectetur, nulla
+                      sequi tempore impedit autem! Voluptas!
+                    </p>
+                  </li>
+                  <li
+                    class="bg-gray-100 p-2.5 border border-transparent correct-answer rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
+                    role="button"
+                    tabindex="0"
                   >
+                    <span
+                      class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
+                      >B</span
+                    >
 
-                  <p class="line-clamp-2 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
-                    dolores, aliquam doloribus soluta nisi consectetur, nulla
-                    sequi tempore impedit autem! Voluptas!
-                  </p>
-                </li>
-                <li
-                  class="bg-gray-100 p-2.5 border border-transparent rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
-                  role="button"
-                  tabindex="0"
-                >
-                  <span
-                    class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
-                    >C</span
+                    <p class="line-clamp-2 text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
+                      dolores, aliquam doloribus soluta nisi consectetur, nulla
+                      sequi tempore impedit autem! Voluptas!
+                    </p>
+                  </li>
+                  <li
+                    class="bg-gray-100 p-2.5 border border-transparent rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
+                    role="button"
+                    tabindex="0"
                   >
+                    <span
+                      class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
+                      >C</span
+                    >
 
-                  <p class="line-clamp-2 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
-                    dolores, aliquam doloribus soluta nisi consectetur, nulla
-                    sequi tempore impedit autem! Voluptas!
-                  </p>
-                </li>
-                <li
-                  class="bg-gray-100 p-2.5 border border-transparent rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
-                  role="button"
-                  tabindex="0"
-                >
-                  <span
-                    class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
-                    >D</span
+                    <p class="line-clamp-2 text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
+                      dolores, aliquam doloribus soluta nisi consectetur, nulla
+                      sequi tempore impedit autem! Voluptas!
+                    </p>
+                  </li>
+                  <li
+                    class="bg-gray-100 p-2.5 border border-transparent rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
+                    role="button"
+                    tabindex="0"
                   >
+                    <span
+                      class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
+                      >D</span
+                    >
 
-                  <p class="line-clamp-2 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
-                    dolores, aliquam doloribus soluta nisi consectetur, nulla
-                    sequi tempore impedit autem! Voluptas!
-                  </p>
-                </li>
-              </ul>
+                    <p class="line-clamp-2 text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
+                      dolores, aliquam doloribus soluta nisi consectetur, nulla
+                      sequi tempore impedit autem! Voluptas!
+                    </p>
+                  </li> -->
+                </ul>
+              </div>
+
+              <button
+                class="bg-black hover:bg-black/80 transition-colors text-white justify-self-end self-end w-fit flex items-center px-3 py-2 rounded-md justify-between"
+                data-next-button
+                data-action="next"
+              >
+                <!-- Texto nas questões normais -->
+                <span>Proxima</span> <i data-lucide="chevron-right"></i>
+
+                <!-- Texto na última questão -->
+              </button>
             </div>
+          </div>
 
-            <button
-              class="bg-black text-white justify-self-end self-end w-fit flex items-center px-3 py-2 rounded-md justify-between"
-              data-next-button
-            >
-              <span>Proxima</span> <i data-lucide="chevron-right"></i>
-            </button>
+          <div
+            class="hidden flex min-h-[400px] h-full flex-1 rounded-2xl items-center justify-center bg-radial-[at_50%_50%] to-black from-zinc-800 text-white"
+            data-end-quiz-section
+          >
+            <div class="text-center p-10 max-w-md">
+              <h2 class="text-3xl font-bold mb-4">Parabéns!</h2>
+              <p class="text-lg mb-6">Você finalizou o quiz com sucesso.</p>
+              <button
+                data-reset-button
+                class="bg-white text-black font-semibold px-5 py-2 rounded hover:bg-gray-100 transition"
+              >
+                Refazer Quiz
+              </button>
+            </div>
           </div>
         </section>
 
@@ -216,7 +234,8 @@
             class="flex-1 overflow-y-auto max-h-[500px] gap-3 scrollbar-custom"
             data-side-list
           >
-            <li
+            <!-- Exemplos -->
+            <!-- <li
               class="h-[72px] flex items-center p-4 gap-2 hover:bg-gray-100 transition-colors cursor-pointer current-question"
               role="button"
               tabindex="0"
@@ -290,7 +309,7 @@
                   asperiores nam quia nemo, aliquid hic inventore labore?</span
                 >
               </div>
-            </li>
+            </li> -->
           </ul>
         </section>
       </div>
