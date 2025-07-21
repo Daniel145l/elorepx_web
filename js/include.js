@@ -10,7 +10,7 @@ function includeComponent(id, file, callback) {
 
 window.addEventListener('DOMContentLoaded', () => {
   includeComponent('header', '../components/header.html', initMenu);
-  includeComponent('footer', './components/footer.html');
+  includeComponent('footer', '../components/footer.html');
 });
 
 function initMenu() {
