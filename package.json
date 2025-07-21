@@ -4,7 +4,7 @@
     "lucide": "^0.525.0"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/styles.css -o ./css/output.css --watch"
+    "dev": "npx tailwindcss -i ./css/styles.css -o ./css/output.css --content './**/*.html' --watch"
   },
   "devDependencies": {
     "tailwindcss": "^4.1.11"
