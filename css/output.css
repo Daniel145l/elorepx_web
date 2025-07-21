@@ -388,6 +388,12 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
+  .px-22 {
+    padding-inline: calc(var(--spacing) * 22);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -399,6 +405,9 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
