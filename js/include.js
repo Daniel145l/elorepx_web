@@ -25,16 +25,13 @@ function initMenu() {
     e.stopPropagation();
 
     if (menuAberto) {
-      // Fecha com animação
       menu.classList.remove("translate-x-0");
       menu.classList.add("-translate-x-[100%]");
       setTimeout(() => {
         menu.classList.add("hidden");
       }, 300);
     } else {
-      // Abre com animação
       menu.classList.remove("hidden");
-      // Garante reflow para aplicar transição (força o browser a reprocessar)
       void menu.offsetWidth;
       menu.classList.remove("-translate-x-[100%]");
       menu.classList.add("translate-x-0");
