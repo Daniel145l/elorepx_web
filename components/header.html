@@ -1,13 +1,14 @@
-<header class="bg-black text-white px-8 py-6 font-bold flex items-center">
+<header class="bg-black text-white px-8 py-6 font-bold flex items-center lg:bg-white lg:text-black lg:font-normal lg:justify-center lg:mt-2">
 
-  <div class="flex items-center justify-between w-[100%]">
+  <div class="flex items-center justify-between w-full lg:hidden">
     <h1 class="text-3xl font-inter">Elorepx</h1>
     <button class="lg:hidden outline-none" id="menu-button">
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
     </button>
   </div>
 
-  <nav class="fixed top-0 left-0 bg-black px-8 h-[100%] w-[60%] z-50 shadow transition-all duration-300 transform -translate-x-[100%]" id="menu-mobile">
+  <!-- menu mobile -->
+  <nav class="fixed top-0 left-0 bg-black px-8 h-[100%] w-[60%] z-50 shadow transition-all duration-300 transform -translate-x-[100%] lg:hidden" id="menu-mobile">
     <ul class="flex flex-col gap-5 pt-10">
       <li><a href="index.html">Home</a></li>
       <li><a href="olimpiadas.html">Olimpíadas</a></li>
@@ -18,16 +19,22 @@
     </ul> 
   </nav>
 
-  <nav class="hidden">
-    <ul class="flex">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="olimpiadas.html">olimpíadas</a></li>
-      <li><a href="sobre.html">sobre</a></li>
-      <li><a href="questoes.html">Questões</a></li>
-      <li><a href="eventos.html">Eventos</a></li>
-      <li><a href="canais.html">Canais</a></li>
+  <!-- menu desktop -->
+  <nav class="hidden w-[90%] shadow-[0px_0px_8px_6px_rgba(0,_0,_0,_0.1)] px-8 py-2 rounded-2xl uppercase text-sm lg:block">
+    <ul class="flex justify-between w-full">
+      <li><a href="index.html" class="hover:text-gray-500">Home</a></li>
+      <li><a href="olimpiadas.html" class="hover:text-gray-500">olimpíadas</a></li>
+      <li><a href="sobre.html" class="hover:text-gray-500">sobre</a></li>
+      <li class="invisible"><a href="index.html">Elorepx</a></li>
+      <li><a href="questoes.html" class="hover:text-gray-500">Questões</a></li>
+      <li><a href="eventos.html" class="hover:text-gray-500">Eventos</a></li>
+      <li><a href="canais.html" class="hover:text-gray-500">Canais</a></li>
     </ul>
   </nav>
+
+  <div class="hidden absolute bg-black text-white font-bold rounded-full w-20 h-20 lg:flex items-center justify-center text-center z-20 left-[50%] top-2 translate-x-[-50%]">
+    Elorepx
+  </div>
 
   <script src="../js/menu.js"></script>
 </header>
