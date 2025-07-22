@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-full w-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Eventos | Elorepx</title>
+
+    <script src="../js/scroll-to-top.js" defer></script>
+  </head>
+  <body class="min-h-screen font-inter w-full flex flex-col">
+
+  <header id="header"></header>
+
+  <main class="w-full max-w-[1280px] mx-auto px-4 md:px-10 flex-1 mt-10">
+    <section class="flex relative bg-black rounded-[20px]">
+        <!-- Bloco de texto -->
+        <div
+          class="flex-1 text-white bg-black p-10 h-full md:min-h-[386px] rounded-l-[20px] max-md:rounded-[20px] relative"
+        >
+          <h1 class="text-3xl md:text-4xl font-bold mb-3 md:max-w-[420px]">
+            Observe o céu como cientista. Cada dia um novo espetáculo
+          </h1>
+          <p class="text-[#A5A5A5] mb-3 md:max-w-[460px]">
+            Veja os movimentos do Sol e da Lua, desobrindo o que acontece acima de você
+          </p>
+          <div
+            class="flex gap-5 max-md:flex md:absolute md:bottom-10 flex-wrap"
+          >
+            <div
+              class="bg-white rounded-[8px] text-black px-3 py-2.5 w-80 flex flex-1 gap-1.5 items-center font-medium hover:bg-gray-200 transition"
+            >
+              <img src="../assets/images/olympiads/rocket.svg" />
+              <a href="#">Veja como o céu está hoje</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagem com plano de fundo -->
+        <div
+          class="flex-1 mask-l-from-50% bg-black max-md:hidden grayscale mask-l-to-90% rounded-r-[20px] bg-center bg-cover bg-[url('../assets/images/olympiads/austronaut.png')]"
+        ></div>
+      </section>
+
+      <section class="mt-9 w-full">
+        <h1 class="font-bold text-3xl mt-8">Como está o céu hoje?</h1>
+        <p>Observar o céu é uma maneira poderosa de se motivar a estudar Astronomia. É quando a teoria ganha vida e se torna prática, então podemos testemunhar o espetáculo que nos envolve.</p>
+
+        <div class="flex flex-col items-center justify-center bg-linear-to-b from-[#160000] from-6% to-[#000000] to-75% mt-11 rounded-xl px-10 py-10 gap-4">
+          <img src="../assets/images/events/sun.png" alt="A estrela Sol" class="max-w-[200px]">
+          <div class="text-white w-full text-center">
+            <h2 class="text-2xl font-semibold">A nossa estrela Sol</h2>
+            <p class="text-gray-400">
+              O sol é a estrela central do nosso sistema solar e a fonte de luz e calor para a Terra. Ele é uma estrela anã amarela, com cerca de 4,6 bilhões de anos, e sua gravidade mantém todos os corpos celestes do sistema solar em órbita. O sol é essencial para a vida na Terra, fornecendo energia para a fotossíntese, mantendo a temperatura adequada e influenciando o clima. 
+              <!-- pensar em como adicionar as informações -->
+               <div id="sol-info" class="mt-[15px] flex flex-col"></div>
+              <!-- vou adicionar as informações da api da ipgeolocation aqui -->
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center bg-linear-to-b from-[#160000] from-6% to-[#000000] to-75% mt-11 rounded-xl px-10 py-10 gap-4">
+          <img src="../assets/images/events/moon.png" alt="O satélite Lua" class="max-w-[200px]">
+          <div class="text-white w-full text-center">
+            <h2 class="text-2xl font-semibold">O nosso satélite natural Lua</h2>
+            <p class="text-gray-400">
+              A Lua é o único satélite natural da Terra, um corpo celeste rochoso que orbita o nosso planeta. Ela é conhecida por suas fases visíveis da Terra, causadas pela forma como a luz solar incide em sua superfície. A Lua também desempenha um papel importante no planeta, influenciando as marés e ajudando a estabilizar o eixo da Terra. 
+              <!-- pensar em como adicionar as informações -->
+               <div id="lua-info" class="mt-[15px] flex flex-col"></div>
+              <!-- vou adicionar as informações da api da ipgeolocation aqui -->
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-9 w-full">
+        <h1 class="font-bold text-3xl mt-8">O dia em uma foto da NASA</h1>
+        <p>A NASA publica diariamente uma imagem incrível do universo por meio da iniciativa Astronomy Picture of the Day (APOD). Cada foto vem com uma breve explicação e nos ajuda a conhecer melhor o espaço de forma visual e inspiradora.</p>
+
+        <div>
+          <!-- api da nasa APOD -->
+           <div class="apod"></div>
+          <!-- imagem -->
+          <!-- texto -->
+        </div>
+
+      </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="../js/include.js"></script>
+  <script src="../js/events.js"></script>
+</body>
+</html>
