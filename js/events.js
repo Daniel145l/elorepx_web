@@ -64,9 +64,14 @@ async function carregaAPOD() {
 
     document.getElementById("apod").innerHTML = 
     `
-    <img src="${data.url}" alt="${data.title}" />
-    <h2 class="text-2xl font-semibold">Explicação:</h2>
-    <p>${data.explanation}</p>
+    <div class="text-center">
+      <img src="${data.url}" alt="${data.title}" class="rounded-[20px]" />
+      <span class="text-gray-600 text-sm">${data.title}</span>
+    </div>
+    <div>
+      <h2 class="text-2xl font-semibold">Explicação:</h2>
+      <p>${data.explanation}</p>
+    </div>
     `
   } catch(err) {
     console.log(err);
