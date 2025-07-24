@@ -1,0 +1,44 @@
+<div class="bg-black text-white px-10 py-6 font-bold flex items-center lg:bg-white lg:text-black lg:font-normal lg:justify-center lg:mt-4">
+
+  <div class="flex items-center justify-between w-full lg:hidden">
+    <div class="flex justify-center items-center gap-2">
+      <i class="ph ph-planet text-[32px] stroke-3"></i>
+      <h1 class="text-3xl font-inter">Elorepx</h1>
+    </div>
+    <button class="lg:hidden outline-none" id="menu-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+    </button>
+  </div>
+
+  <!-- menu mobile -->
+  <nav class="fixed top-0 left-0 bg-black px-8 h-[100%] w-[60%] z-50 shadow transition-all duration-300 transform -translate-x-[100%] lg:hidden" id="menu-mobile">
+    <ul class="flex flex-col gap-5 pt-10">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="olympiads.html">Olimpíadas</a></li>
+      <li><a href="about.html">Sobre</a></li>
+      <li><a href="eloquiz.html">Questões</a></li>
+      <li><a href="events.html">Eventos</a></li>
+      <li><a href="channels.html">Canais</a></li>
+    </ul> 
+  </nav>
+
+  <!-- menu desktop -->
+  <nav class="hidden w-full max-w-[1280px] shadow-[0px_0px_8px_6px_rgba(0,_0,_0,_0.1)] px-12 py-2 rounded-2xl uppercase text-sm lg:block">
+    <ul class="flex justify-between w-full">
+      <li><a href="index.html" class="hover:text-gray-500">Home</a></li>
+      <li><a href="olympiads.html" class="hover:text-gray-500">olimpíadas</a></li>
+      <li><a href="about.html" class="hover:text-gray-500">sobre</a></li>
+      <li class="invisible"><a href="index.html">Elorepx</a></li>
+      <li><a href="eloquiz.html" class="hover:text-gray-500">Questões</a></li>
+      <li><a href="events.html" class="hover:text-gray-500">Eventos</a></li>
+      <li><a href="channels.html" class="hover:text-gray-500">Canais</a></li>
+    </ul>
+  </nav>
+
+  <div class="hidden absolute bg-black text-white font-bold rounded-full w-25 h-25 lg:flex items-center justify-center text-center z-20 left-[50%] translate-x-[-50%] text-lg gap-1">
+    <i class="ph ph-planet text-[20px] stroke-3"></i>
+    <span>Elorepx</span>
+  </div>
+
+  <script src="../js/menu.js"></script>
+</d>
