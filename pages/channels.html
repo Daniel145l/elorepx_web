@@ -20,62 +20,7 @@
   </head>
 
   <body class="min-h-screen font-inter w-full flex flex-col font-inter">
-    <header
-      class="bg-black text-white md:bg-transparent flex items-center justify-center px-4 md:px-10 sticky z-10 right-0 left-0 top-0 md:relative"
-    >
-      <nav
-        class="w-full h-24 max-w-[1280px] flex justify-between items-center md:hidden"
-        data-navigation="mobile"
-      >
-        <strong class="text-2xl font-bold flex items-center gap-2">
-          <i class="ph ph-planet text-[32px] stroke-3"></i>
-          Elorepx
-        </strong>
-
-        <button
-          class="bg-black rounded-md size-12 hover-button transition-colors"
-          data-button="navigation-trigger"
-        >
-          <i class="ph ph-list text-[32px]"></i>
-        </button>
-      </nav>
-
-      <nav
-        data-navigation="desktop"
-        class="w-full max-w-[1280px] flex justify-center items-center mt-6 max-md:hidden"
-      >
-        <div
-          class="flex-1 text-black justify-end pr-12 flex gap-12 items-center shadow-[0px_0px_8px_6px_rgba(0,0,0,0.15)] translate-x-1 rounded-l-2xl"
-        >
-          <a href="./index.html" class="text-base hover:underline uppercase"
-            >Home</a
-          >
-          <a href="./olympiads.html" class="text-base hover:underline uppercase"
-            >Olimpiadas</a
-          >
-        </div>
-
-        <div
-          class="bg-black rounded-full size-26 flex items-center justify-center px-3"
-        >
-          <strong class="text-[16px] font-bold flex items-center gap-1">
-            <i class="ph ph-planet text-[20px] stroke-3"></i>
-            Elorepx
-          </strong>
-        </div>
-
-        <div
-          class="flex-1 text-black pl-12 flex gap-12 items-center shadow-[0px_0px_8px_6px_rgba(0,0,0,0.15)] -translate-x-1 rounded-r-2xl"
-        >
-          <a href="./eloquiz.html" class="text-base hover:underline uppercase"
-            >Questões</a
-          >
-          <a href="./channels.html" class="text-base hover:underline uppercase"
-            >Canais</a
-          >
-        </div>
-      </nav>
-    </header>
+    <header id="header"></header>
 
     <main
       class="w-full flex-1 max-w-[1280px] px-4 md:px-12 mx-auto my-10 flex flex-col gap-10"
@@ -96,7 +41,7 @@
             Conheça alguns canais e absorva conhecimento
           </p>
           <a
-            href="#"
+            href="#channels"
             class="bg-white md:absolute md:bottom-10 text-black px-4 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-gray-200 transition w-fit"
           >
             <i data-lucide="rocket" class="text-[40px]"></i>
@@ -110,7 +55,7 @@
         ></div>
       </section>
 
-      <section>
+      <section id="channels">
         <h4 class="text-3xl font-semibold mb-6">Youtube</h4>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -160,7 +105,8 @@
             </div>
 
             <a
-              href="#"
+              href="https://www.youtube.com/@CienciaTodoDia"
+              target="_blank"
               class="flex items-center bg-white text-black px-3 py-2 rounded-md w-fit gap-3 ml-auto"
             >
               <div class="flex items-center gap-2">
@@ -219,7 +165,8 @@
             </div>
 
             <a
-              href="#"
+              href="https://www.youtube.com/@SpaceToday"
+              target="_blank"
               class="flex items-center bg-white text-black px-3 py-2 rounded-md w-fit gap-3 ml-auto"
             >
               <div class="flex items-center gap-2">
@@ -297,7 +244,8 @@
             </div>
 
             <a
-              href="#"
+              href="https://www.instagram.com/astrotubers/"
+              target="_blank"
               class="flex items-center bg-white text-black px-3 py-2 rounded-md w-fit gap-3 ml-auto"
             >
               <div class="flex items-center gap-2">
@@ -354,7 +302,8 @@
             </div>
 
             <a
-              href="#"
+              href="https://www.instagram.com/cafeeciencia/"
+              target="_blank"
               class="flex items-center bg-white text-black px-3 py-2 rounded-md w-fit gap-3 ml-auto"
             >
               <div class="flex items-center gap-2">
@@ -370,34 +319,12 @@
       </section>
     </main>
 
-    <footer
-      class="bg-black text-white px-4 py-8 flex items-center justify-center md:px-10 mt-10"
-    >
-      <div
-        class="flex flex-col items-center justify-between text-center gap-8 md:flex-row w-full max-w-[1280px]"
-      >
-        <strong class="text-xl font-bold flex items-center gap-2">
-          <i class="ph ph-planet text-[32px] stroke-3"></i>
-          Elorepx
-        </strong>
-
-        <p class="text-[#a5a5a5] text-base">
-          © 2025 Elorepx — Uma plataforma dedicada à exploração do conhecimento
-          científico.
-        </p>
-
-        <button
-          class="flex border py-2.5 px-3 gap-2 rounded-lg items-center justify-center hover-button transition-colors"
-        >
-          <span>Voltar ao topo</span>
-          <i data-lucide="chevron-up"></i>
-        </button>
-      </div>
-    </footer>
+    <footer id="footer"></footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
     </script>
+    <script src="../js/include.js"></script>
   </body>
 </html>
