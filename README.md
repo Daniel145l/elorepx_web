@@ -39,10 +39,10 @@ Promover o interesse pela Astronomia e tornar o estudo mais leve e gamificado, c
 
 ## 👥 Equipe
 
-- Daniel Lucas Ulisses Magalhães (554563)
-- Kleyton Kluesriton Ferreira Pereira (555426)
-- Daniel Christopher Souza Rodrigues (552493)
-- Lucas Ferreira Nobre (554590)
+- [Daniel Lucas Ulisses Magalhães (554563)](https://github.com/Daniel145l)
+- [Kleyton Kluesriton Ferreira Pereira (555426)](https://github.com/Kleytonferreiraa)
+- [Daniel Christopher Souza Rodrigues (552493)](https://github.com/odanielchristopher)
+- [Lucas Ferreira Nobre (554590)](https://github.com/LucasFerreira2004)
 - Giliardy Alves da Silva (552752)
 
 ---
