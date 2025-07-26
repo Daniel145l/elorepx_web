@@ -26,9 +26,9 @@
     <section class="flex relative bg-black rounded-[20px]">
         <!-- Bloco de texto -->
         <div
-          class="flex-1 text-white bg-black p-10 h-full md:min-h-[386px] rounded-l-[20px] max-md:rounded-[20px] relative"
+          class="flex-1 text-white bg-black p-4 sm:p-10 h-full md:min-h-[386px] rounded-l-[20px] max-md:rounded-[20px] relative"
         >
-          <h1 class="text-3xl md:text-4xl font-bold mb-3 md:max-w-[420px]">
+          <h1 class="text-xl sm:text-2xl md:text-4xl font-bold mb-3 md:max-w-[420px]">
             Observe o céu como cientista. Cada dia um novo espetáculo
           </h1>
           <p class="text-[#A5A5A5] mb-3 md:max-w-[460px]">
@@ -48,7 +48,7 @@
 
         <!-- Imagem com plano de fundo -->
         <div
-          class="flex-1 mask-l-from-50% bg-black max-md:hidden grayscale mask-l-to-90% rounded-r-[20px] bg-center bg-cover bg-[url('../assets/images/events/banner.png')]"
+          class="flex-1 mask-l-from-50% bg-black max-md:hidden grayscale mask-l-to-90% rounded-r-[20px] bg-right bg-cover bg-[url('../assets/images/events/sky.png')]"
         ></div>
       </section>
 
@@ -56,9 +56,9 @@
         <h1 class="font-bold text-3xl mt-8">Como está o céu hoje?</h1>
         <p>Observar o céu é uma maneira poderosa de se motivar a estudar Astronomia. É quando a teoria ganha vida e se torna prática, então podemos testemunhar o espetáculo que nos envolve.</p>
 
-        <div class="flex flex-col items-center justify-center bg-linear-to-b from-[#160000] from-6% to-[#000000] to-75% mt-11 rounded-xl px-10 py-10 gap-4">
-          <img src="../assets/images/events/sun.png" alt="A estrela Sol" class="max-w-[200px]">
-          <div class="text-white w-full text-center">
+        <div class="flex flex-col items-center justify-center bg-linear-to-b from-[#160000] from-6% to-[#000000] to-75% mt-11 rounded-xl px-10 py-10 gap-4 md:flex-row md:gap-30">
+          <img src="../assets/images/events/sun.png" alt="A estrela Sol" class="max-w-[200px] md:max-w-[300px]">
+          <div class="text-white w-full text-center md:text-left md:flex md:flex-col md:gap-3">
             <h2 class="text-2xl font-semibold">A nossa estrela Sol</h2>
             <p class="text-gray-400">
               O sol é a estrela central do nosso sistema solar e a fonte de luz e calor para a Terra. Ele é uma estrela anã amarela, com cerca de 4,6 bilhões de anos, e sua gravidade mantém todos os corpos celestes do sistema solar em órbita. O sol é essencial para a vida na Terra, fornecendo energia para a fotossíntese, mantendo a temperatura adequada e influenciando o clima. 
@@ -69,9 +69,9 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center justify-center bg-linear-to-b from-[#160000] from-6% to-[#000000] to-75% mt-11 rounded-xl px-10 py-10 gap-4">
-          <img src="../assets/images/events/moon.png" alt="O satélite Lua" class="max-w-[200px]">
-          <div class="text-white w-full text-center">
+        <div class="flex flex-col items-center justify-center bg-linear-to-b from-[#160000] from-6% to-[#000000] to-75% mt-11 rounded-xl px-10 py-10 gap-4 md:flex-row md:gap-30">
+          <img src="../assets/images/events/moon.png" alt="O satélite Lua" class="max-w-[200px] md:max-w-[300px]">
+          <div class="text-white w-full text-center md:text-left md:flex md:flex-col md:gap-3">
             <h2 class="text-2xl font-semibold">O nosso satélite natural Lua</h2>
             <p class="text-gray-400">
               A Lua é o único satélite natural da Terra, um corpo celeste rochoso que orbita o nosso planeta. Ela é conhecida por suas fases visíveis da Terra, causadas pela forma como a luz solar incide em sua superfície. A Lua também desempenha um papel importante no planeta, influenciando as marés e ajudando a estabilizar o eixo da Terra. 
@@ -87,10 +87,7 @@
         <h1 class="font-bold text-3xl mt-8">O dia em uma foto da NASA</h1>
         <p>A NASA publica diariamente uma imagem incrível do universo por meio da iniciativa Astronomy Picture of the Day (APOD). Cada foto vem com uma breve explicação e nos ajuda a conhecer melhor o espaço de forma visual e inspiradora.</p>
 
-        <div id="apod" class="mt-8 p-8 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[20px] flex flex-col gap-5">
-          <!-- api da nasa APOD -->
-          <!-- imagem -->
-          <!-- texto -->
+        <div id="apod" class="mt-8 p-8 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[20px] flex flex-col gap-5 items-center justify-center">
         </div>
 
       </section>

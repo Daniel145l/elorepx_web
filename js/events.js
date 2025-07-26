@@ -65,7 +65,7 @@ async function carregaAPOD() {
     document.getElementById("apod").innerHTML = 
     `
     <div class="text-center">
-      <img src="${data.url}" alt="${data.title}" class="rounded-[20px]" />
+      <img src="${data.url}" alt="${data.title}" class="rounded-[20px] w-full" />
       <span class="text-gray-600 text-sm">${data.title}</span>
     </div>
     <div>
