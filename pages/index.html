@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/output.css">
-  <title>Home</title>
-</head>
-<body>
-</body>
+<html lang="pt-br" class="h-full w-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Elorepx</title>
+
+    <script src="../js/scroll-to-top.js" defer></script>
+  </head>
+
+  <body class="min-h-screen font-inter w-full flex flex-col">
+    <header id ="header"></header>
+
+<main class="w-full max-w-[1280px] mx-auto px-4 md:px-10 flex-1 mt-10">
+      <div class="relative w-full flex justify-center items-center py-6">
+        <img src="../assets/images/index/stars.png" alt="Estrelas"
+          class="absolute inset-0 w-full h-full object-cover rounded-xl z-0" />
+
+        <div class="relative z-10 flex items-center w-full max-w-[1064px] md:w-[1064px] md:h-[385px] h-auto bg-black/70 rounded-xl p-6 md:p-12 mx-auto">
+          <div class="flex-1 flex flex-col items-center md:items-start justify-center z-10 text-center md:text-left">
+            <h2 class="text-white text-2xl md:text-4xl font-bold mb-2 leading-tight">
+              Qualquer um pode<br>
+              explorar o espaço sideral
+            </h2>
+            <p class="text-[#A5A5A5] text-xl md:text-xl mb-4 md:mb-6 hidden md:block">
+              Quer conhecer mais sobre o que nos cerca?
+            </p>
+            <a href="olympiads.html" class="border-3 border-white text-white px-20 py-2 rounded-lg hover:bg-white hover:text-black transition">
+              Explorar
+            </a>
+          </div>
+          <img src="../assets/images/index/astronauta.png" alt="Astronauta"
+          class="hidden md:block absolute bottom-[-120px] right-6 md:w-[300px] lg:w-[380px] z-10" />
+          </div>
+        </div>
+      </div>
+
+      <section class="mt-20 w-full">
+        <div class="max-w-[1280px] mx-auto w-full">
+          <h1 class="hidden md:block font-bold text-3xl my-8 text-left">Por que estudar o universo?</h1>
+
+
+
+        <div class="flex justify-center md:justify-start">
+          <div class="grid gap-y-5 gap-x-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center">
+            <div class="relative w-full rounded-2xl bg-white text-black p-8 flex flex-col items-center justify-start gap-3 shadow-sm border border-gray-200 text-center max-w-[400px] h-[300px]">
+              <img src="../assets/images/olympiads/rocket.svg" alt="Foguete" class="w-10 h-10 mb-3" />
+              <div class="text-sm md:text-base pt-5 font-semibold mb-2">Desenvolve o raciocínio científico</div>
+              <div class="text-xs md:text-sm text-gray-600">
+                Estudar astronomia estimula o pensamento lógico e investigativo,
+                ajudando a entender fenômenos naturais e a aplicar o método científico.
+              </div>
+            </div>
+          
+            <div class="relative w-full rounded-2xl bg-white text-black p-8 flex flex-col items-center justify-start gap-3 shadow-sm border border-gray-200 text-center max-w-[400px] h-[300px]">
+              <img src="../assets/images/events/telescope.svg" alt="Foguete" class="w-10 h-10 mb-3" />
+              <div class="text-sm md:text-base pt-5 font-semibold mb-2">Amplia a visão sobre o mundo e o universo</div>
+              <div class="text-xs md:text-sm text-gray-600">
+                Conhecer o universo nos ajuda a entender nosso lugar nele,
+                desenvolvendo uma consciência global e cósmica sobre a vida e o planeta.
+              </div>
+            </div>
+
+            <div class="relative w-full rounded-2xl bg-white text-black p-8 flex flex-col items-center justify-start gap-3 shadow-sm border border-gray-200 text-center max-w-[400px] h-[300px]">
+              <img src="../assets/images/channels/book-open.svg" alt="Foguete" class="w-10 h-10 mb-5" />
+              <div class="text-sm md:text-base pt-5 font-semibold mb-2">Estimula habilidades multidisciplinares</div>
+              <div class="text-xs md:text-sm text-gray-600">
+                A astronomia conecta física, matemática, história, tecnologia e <br> filosofia — promovendo um aprendizado completo e integrado.
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="w-screen bg-[#000000] mt-20 hidden md:block relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+        <div class="h-[504px] flex flex-row items-center justify-between gap-10">
+          <div class="flex-1 flex justify-center items-center">
+            <img src="../assets/images/index/sistemasolar.png" alt="Sistema Solar" class="w-full max-w-[400px]" />
+          </div>
+          <div class="flex-1 flex flex-col justify-center items-center text-white text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">SISTEMA SOLAR</h2>
+            <p class="text-base md:text-lg leading-relaxed max-w-xl">
+              O Sistema Solar é um conjunto formado por oito planetas e outros corpos celestes, que orbitam o Sol, a sua principal estrela. Está localizado na Via Láctea, uma das galáxias que formam o Universo. São planetas do Sistema Solar: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full flex justify-center items-center mt-20 mb-10">
+        <div class="w-full max-w-[1280px] flex flex-col md:flex-row items-center justify-center gap-8">
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-10 flex flex-col items-center justify-center w-[360px] md:w-[608px] h-[480px] md:h-[386px] text-center mx-auto transition-allo">
+            <h2 class="font-bold text-2xl md:text-3xl mb-4">Vamos decolar juntos nesse foguete</h2>
+            <p class="text-base md:text-lg text-gray-700 mb-8">
+              O Sistema Solar é um conjunto formado por oito planetas e outros corpos celestes, que orbitam o Sol, a sua principal estrela. Está localizado na Via Láctea, uma das galáxias que formam o Universo. São planetas do Sistema Solar: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno.
+            </p>
+            <a href="olympiads.html" class="bg-black text-white px-8 py-2 rounded font-semibold hover:bg-gray-900 transition">Decolar</a>
+          </div>
+          <div class="hidden md:flex items-center justify-center w-[300px] h-[300px] md:w-[500px] md:h-[500px]">
+            <img src="../assets/images/index/rocket.png" alt="Foguete" class="w-full h-full object-contain" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="../js/include.js"></script>
+  </body>
 </html>

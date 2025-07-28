@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-full w-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Elorepx - Questões</title>
+
+    <script src="../js/scroll-to-top.js" defer></script>
+
+    <script type="module" src="../js/quiz.js" defer></script>
+  </head>
+
+  <body class="h-screen w-full flex flex-col font-inter">
+    <header id="header"></header>
+
+    <main
+      class="w-full flex-1 max-w-[1280px] px-4 md:px-12 mx-auto mt-10 flex flex-col"
+    >
+      <h3 class="text-2xl font-semibold mb-4">EloQuiz</h3>
+
+      <div class="flex flex-1 gap-6 flex-col lg:flex-row">
+        <!-- Container da questão -->
+        <section class="border rounded-2xl flex-2/3">
+          <div class="flex flex-col h-full" data-quiz-section>
+            <header
+              class="bg-black text-white rounded-t-xl p-5 min-h-[92px] flex items-center"
+            >
+              <h5
+                class="text-lg font-semibold tracking-[-1px]"
+                data-question-title
+              >
+                Questão 01
+              </h5>
+            </header>
+
+            <div class="p-4 flex flex-col flex-1 justify-between gap-10">
+              <div>
+                <!-- Pergunta -->
+                <p class="line-clamp-3" data-question-text></p>
+
+                <div class="h-[1px] w-full my-5 bg-black"></div>
+
+                <!-- Lista de -->
+                <ul class="space-y-3" data-answers-list>
+                  <!-- Exemplos -->
+                  <!-- <li
+                    class="bg-gray-100 p-2.5 border border-transparent wrong-answer rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <span
+                      class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
+                      >A</span
+                    >
+
+                    <p class="line-clamp-2 text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
+                      dolores, aliquam doloribus soluta nisi consectetur, nulla
+                      sequi tempore impedit autem! Voluptas!
+                    </p>
+                  </li>
+                  <li
+                    class="bg-gray-100 p-2.5 border border-transparent correct-answer rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <span
+                      class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
+                      >B</span
+                    >
+
+                    <p class="line-clamp-2 text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
+                      dolores, aliquam doloribus soluta nisi consectetur, nulla
+                      sequi tempore impedit autem! Voluptas!
+                    </p>
+                  </li>
+                  <li
+                    class="bg-gray-100 p-2.5 border border-transparent rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <span
+                      class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
+                      >C</span
+                    >
+
+                    <p class="line-clamp-2 text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
+                      dolores, aliquam doloribus soluta nisi consectetur, nulla
+                      sequi tempore impedit autem! Voluptas!
+                    </p>
+                  </li>
+                  <li
+                    class="bg-gray-100 p-2.5 border border-transparent rounded-xl flex gap-3 items-start hover:border-black transition-all cursor-pointer"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <span
+                      class="bg-[#DDDDDD] p-3 rounded-sm flex items-center justify-center size-5 text-sm"
+                      >D</span
+                    >
+
+                    <p class="line-clamp-2 text-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illo dicta, sequi rem esse ipsam fuga? Ipsam quod labore
+                      dolores, aliquam doloribus soluta nisi consectetur, nulla
+                      sequi tempore impedit autem! Voluptas!
+                    </p>
+                  </li> -->
+                </ul>
+              </div>
+
+              <button
+                class="bg-black hover:bg-black/80 transition-colors text-white justify-self-end self-end w-fit flex items-center px-3 py-2 rounded-md justify-between"
+                data-next-button
+                data-action="next"
+              >
+                <!-- Texto nas questões normais -->
+                <span>Proxima</span> <i data-lucide="chevron-right"></i>
+
+                <!-- Texto na última questão -->
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="hidden flex min-h-[400px] h-full flex-1 rounded-2xl items-center justify-center bg-radial-[at_50%_50%] to-black from-zinc-800 text-white"
+            data-end-quiz-section
+          >
+            <div class="text-center p-10 max-w-md">
+              <h2 class="text-3xl font-bold mb-4">Parabéns!</h2>
+              <p class="text-lg mb-6">Você finalizou o quiz com sucesso.</p>
+              <button
+                data-reset-button
+                class="bg-white text-black font-semibold px-5 py-2 rounded hover:bg-gray-100 transition"
+              >
+                Refazer Quiz
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Container da lista e navegador das questões -->
+        <section class="border rounded-2xl flex-1/3 flex flex-col">
+          <header class="bg-black text-white rounded-t-xl p-5 min-h-[76px]">
+            <div class="flex justify-between items-center">
+              <h5 class="text-lg font-semibold tracking-[-1px]">Questões</h5>
+
+              <span
+                class="uppercase py-0.5 px-1 border border-[#96F2D7] text-[#96F2D7] bg-[#087F5B] text-[12px] rounded-[4px] font-semibold tracking-[-0.5px]"
+                data-correct-answers-counter
+              >
+                10 acertos
+              </span>
+            </div>
+
+            <span class="text-sm text-[#E9ECEF]" data-questions-answered-counter
+              >10/10 | Astronomia</span
+            >
+          </header>
+
+          <!-- Lista dos botões das questões -->
+          <ul
+            class="flex-1 overflow-y-auto max-h-[500px] gap-3 scrollbar-custom"
+            data-side-list
+          >
+            <!-- Exemplos -->
+            <!-- <li
+              class="h-[72px] flex items-center p-4 gap-2 hover:bg-gray-100 transition-colors cursor-pointer current-question"
+              role="button"
+              tabindex="0"
+              aria-current="true"
+            >
+              <div
+                class="correct-answer-nav-btn flex items-center justify-between rounded-full"
+              >
+                <i data-lucide="badge-check" class="size-7 stroke-[1.5]"></i>
+              </div>
+
+              <div>
+                <strong class="text-sm font-medium tracking-[-0.5px]"
+                  >Questão 01</strong
+                >
+                <span
+                  class="line-clamp-1 text-sm text-[#495057] tracking-[-0.5px]"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae molestiae soluta adipisci blanditiis suscipit delectus
+                  pariatur. Doloribus aut eum deserunt suscipit incidunt
+                  asperiores nam quia nemo, aliquid hic inventore labore?</span
+                >
+              </div>
+            </li>
+            <li
+              class="h-[72px] flex items-center p-4 gap-2 hover:bg-gray-100 transition-colors cursor-pointer"
+              role="button"
+              tabindex="0"
+              aria-current="false"
+            >
+              <div
+                class="wrong-answer-nav-btn flex items-center justify-between rounded-full"
+              >
+                <i data-lucide="badge-alert" class="size-7 stroke-[1.5]"></i>
+              </div>
+
+              <div>
+                <strong class="text-sm font-medium tracking-[-0.5px]"
+                  >Questão 02</strong
+                >
+                <span
+                  class="line-clamp-1 text-sm text-[#495057] tracking-[-0.5px]"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae molestiae soluta adipisci blanditiis suscipit delectus
+                  pariatur. Doloribus aut eum deserunt suscipit incidunt
+                  asperiores nam quia nemo, aliquid hic inventore labore?</span
+                >
+              </div>
+            </li>
+            <li
+              class="h-[72px] flex items-center p-4 gap-2 hover:bg-gray-100 transition-colors cursor-pointer"
+              role="button"
+              tabindex="0"
+              aria-current="false"
+            >
+              <div
+                class="default-answer-nav-btn flex items-center justify-between rounded-full"
+              >
+                <i data-lucide="brain" class="size-7 stroke-[1.5]"></i>
+              </div>
+
+              <div>
+                <strong class="text-sm font-medium tracking-[-0.5px]"
+                  >Questão 03</strong
+                >
+                <span
+                  class="line-clamp-1 text-sm text-[#495057] tracking-[-0.5px]"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae molestiae soluta adipisci blanditiis suscipit delectus
+                  pariatur. Doloribus aut eum deserunt suscipit incidunt
+                  asperiores nam quia nemo, aliquid hic inventore labore?</span
+                >
+              </div>
+            </li> -->
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="../js/include.js"></script>
+  </body>
+</html>

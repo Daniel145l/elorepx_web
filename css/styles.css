@@ -1,1 +1,67 @@
 @import "tailwindcss";
+
+@theme inline {
+  --default-font-family: 'Inter', sans-serif;
+}
+
+button {
+  @apply cursor-pointer text-sm;
+}
+
+.bg-gradient-image {
+border-radius: 20px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 38.46%, #121212 30.48%), url('../assets/images/olympiads/austronaut.png') no-repeat;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+}
+
+.image-fade {
+  mask-image: linear-gradient(to left, transparent, black 30%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 30%);
+}
+
+.hover-button {
+  @apply hover:bg-gray-100/10;
+}
+
+.current-question {
+  @apply relative before:h-10 before:w-1 before:bg-[#15F673] before:absolute before:left-0 before:z-10 before:rounded-r-[4px] !bg-gray-300/50;
+}
+
+.correct-answer {
+  @apply border-[#087F5B] bg-green-100;
+}
+
+.wrong-answer {
+  @apply border-[#FFA8A8] bg-red-100;
+}
+
+.default-answer-nav-btn {
+  @apply bg-[#868E96] p-1.5 border-2 border-[#CED4DA] text-[#CED4DA];
+}
+
+.wrong-answer-nav-btn {
+  @apply bg-[#C92A2A] p-1.5 border-2 border-[#FFA8A8] text-[#FFA8A8];
+}
+
+.correct-answer-nav-btn {
+  @apply bg-[#087F5B] p-1.5 border-2 border-[#15F673] text-[#15F673];
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  border-radius: 9999px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+}
+
+.scrollbar-custom {
+  scrollbar-width: thin;
+}
+

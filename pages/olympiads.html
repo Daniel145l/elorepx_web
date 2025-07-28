@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-full w-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Elorepx - Olimpiadas</title>
+    <script src="../js/scroll-to-top.js" defer></script>
+  </head>
+
+  <body class="min-h-screen font-inter w-full flex flex-col">
+    <header id="header"></header>
+
+    <main class="w-full max-w-[1280px] mx-auto px-4 md:px-10 flex-1 mt-10">
+      <section class="flex relative bg-black rounded-[20px]">
+        <!-- Bloco de texto -->
+        <div
+          class="flex-1 text-white bg-black px-2 py-4 sm:p-10 h-full md:min-h-[386px] rounded-l-[20px] max-md:rounded-[20px] relative"
+        >
+          <h1 class="text-xl sm:text-2xl md:text-4xl font-bold mb-3 md:max-w-[420px]">
+            Desvende o Universo das Questões
+          </h1>
+          <p class="text-[#A5A5A5] mb-3 md:max-w-[460px]">
+            Explore as questões das principais olimpíadas científicas do Brasil.
+          </p>
+          <p class="text-[#A5A5A5] mb-10 md:max-w-[460px]">
+            Escolha abaixo qual deseja explorar:
+          </p>
+          <div
+            class="flex gap-5 max-md:flex md:absolute md:bottom-10 flex-wrap"
+          >
+            <div
+              class="bg-white rounded-[8px] text-black px-1 py-2.5 w-80 flex flex-1 gap-1.5 items-center font-medium hover:bg-gray-200 transition md:px-3"
+            >
+              <img src="../assets/images/olympiads/rocket.svg" />
+              <a href="#olimpiadas" class="text-sm md:text-base">Conheça as olimíadas</a>
+            </div>
+            <div
+              class="linkContainner bg-white rounded-[8px] text-black px-1 py-2.5 w-80 flex flex-1 gap-1.5 items-center font-medium hover:bg-gray-200 transition md:px-3"
+            >
+              <img src="../assets/images/olympiads/braing.svg" />
+              <a href="eloquiz.html" class="text-sm md:text-base">Teste seu conhecimento</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagem com plano de fundo -->
+        <div
+          class="flex-1 mask-l-from-50% bg-black max-md:hidden grayscale mask-l-to-90% rounded-r-[20px] bg-center bg-cover bg-[url('../assets/images/olympiads/austronaut.png')]"
+        ></div>
+      </section>
+
+      <section class="mt-9 w-full" id="olimpiadas">
+        <h1 class="font-bold text-3xl my-8">Olimpiadas</h1>
+        <div
+          class="grid gap-10 w-full justify-between grid-cols-1 sm:grid-cols-2"
+        >
+          <div
+            class="relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#000916] to-black text-white p-6 md:p-10 flex flex-col justify-between gap-10 shadow-xl"
+          >
+            <div class="flex flex-col gap-4">
+              <div
+                class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
+              >
+                <i data-lucide="telescope"></i>
+              </div>
+              <h2 class="text-2xl font-semibold">
+                Olimpíada Brasileira de Astronomia - OBA
+              </h2>
+              <p class="text-gray-400">
+                A OBA é uma olimpíada científica anual que estimula o interesse
+                dos estudantes pelas áreas da Astronomia e da Astronáutica,
+                promovendo conhecimento e curiosidade científica em todas as
+                escolas do Brasil.
+              </p>
+            </div>
+            <div class="flex">
+              <a
+                href="http://www.oba.org.br/site/"
+                target="_blank"
+                class="bg-white text-black px-4 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-gray-200 transition"
+              >
+                Mais informações
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#160422] to-black text-white p-6 md:p-10 flex flex-col justify-between gap-10 shadow-xl"
+          >
+            <div class="flex flex-col gap-4">
+              <div
+                class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
+              >
+                <i data-lucide="rocket"></i>
+              </div>
+              <h2 class="text-2xl font-semibold">
+                Mostra Brasileira de Foguetes <br />
+                - MOBFOG
+              </h2>
+              <p class="text-gray-400">
+                A MOBFOG é uma mostra experimental e prática que desafia
+                estudantes a projetar, construir e lançar foguetes, promovendo o
+                aprendizado das leis da Física de forma divertida e
+                participativa.
+              </p>
+            </div>
+            <div class="flex">
+              <a
+                href="https://noic.com.br/olimpiadas/mobfog/"
+                target="_blank"
+                class="bg-white text-black px-4 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-gray-200 transition"
+              >
+                Mais informações
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#00160E] to-black text-white p-6 md:p-10 flex flex-col justify-between gap-10 shadow-xl"
+          >
+            <div class="flex flex-col gap-4">
+              <div
+                class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
+              >
+                <i data-lucide="moon-star"></i>
+              </div>
+              <h2 class="text-2xl font-semibold">
+                Olimpíada Internacional de Astronomia e Astrofísica - IOAA
+              </h2>
+              <p class="text-gray-400">
+                A Seletiva IOAA é organizada para escolher os melhores
+                estudantes brasileiros que representarão o país na Olimpíada
+                Internacional de Astronomia e Astrofísica. Participam os
+                medalhistas da OBA em provas mais avançadas e seletivas.
+              </p>
+            </div>
+            <div class="flex">
+              <a
+                href="https://www.ioaastrophysics.org/"
+                target="_blank"
+                class="bg-white text-black px-4 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-gray-200 transition"
+              >
+                Mais informações
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full max-w-[50rem] rounded-2xl bg-gradient-to-b from-[#221B04] to-black text-white p-6 md:p-10 flex flex-col justify-between gap-10 shadow-xl"
+          >
+            <div class="flex flex-col gap-4">
+              <div
+                class="w-12 h-12 border border-white rounded-lg flex items-center justify-center"
+              >
+                <i class="ph ph-cactus text-[28px]"></i>
+              </div>
+              <h2 class="text-2xl font-semibold">
+                Olimpíada Cearense de Astronomia - OCA
+              </h2>
+              <p class="text-gray-400">
+                A OCA é uma iniciativa regional do estado do Ceará que busca
+                incentivar o estudo da Astronomia entre estudantes do Ensino
+                Fundamental e Médio, com provas escritas e eventos de observação
+                do céu.
+              </p>
+            </div>
+            <div class="flex">
+              <a
+                href="https://seara.ufc.br/pt/olimpiada-cearense-de-foguetes/"
+                target="_blank"
+                class="bg-white text-black px-4 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-gray-200 transition"
+              >
+                Mais informações
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="../js/include.js"></script>
+  </body>
+</html>
